@@ -137,8 +137,7 @@ function login(username, password) {
 
 ## Implemented Functions
 
-<!-- we should make a md docs platform -->
-<!-- suggestions are irrelivent, no? pses dont have suggestions -->
+This is TODO.
 
 ## Extended Docs
 
