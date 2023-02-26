@@ -4,12 +4,11 @@
  */
 
 const cheerio = require('cheerio');
-const login = require('lib/account/login');
-const getUsername = require('lib/account/getUsername');
-const getServersInDashboard = require('lib/playerserver/getServers');
-const selectServer = require('lib/playerserver/selectServer');
-const sendCommand = require('lib/playerserver/console/sendCommand');
-// TODO: class
+const login = require('./lib/account/login');
+const getUsername = require('./lib/account/getUsername');
+const getServersInDashboard = require('./lib/playerserver/getServers');
+const selectServer = require('./lib/playerserver/selectServer');
+const sendCommand = require('./lib/playerserver/console/sendCommand');
 
 /**
  * The PlayerServers class.
