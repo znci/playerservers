@@ -18,7 +18,7 @@ Why not? Many PlayerServers users want to use the CubedCraft API, but cannot bec
 
 ### But cubed-api exists!
 
-And it's broken, and doesn't work, and is outdated. Also, there is zero documentation.
+And it's broken, and is outdated.
 
 ## API Usage
 
