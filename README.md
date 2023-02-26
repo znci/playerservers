@@ -24,7 +24,7 @@ And it's broken, and doesn't work, and is outdated. Also, there is zero document
 
 > Note: All POST related requests **MUST** use Form Data.
 
-> Note: All POST related requests **MUST** also include a token.
+> Note: All POST related requests **MUST** also include a token (cookie).
 
 ## How do I use this!?
 
@@ -137,8 +137,7 @@ function login(username, password) {
 
 ## Implemented Functions
 
-<!-- we should make a md docs platform -->
-<!-- suggestions are irrelivent, no? pses dont have suggestions -->
+This is TODO.
 
 ## Extended Docs
 
