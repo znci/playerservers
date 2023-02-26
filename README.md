@@ -28,31 +28,29 @@ And it's broken, and doesn't work, and is outdated. Also, there is zero document
 
 ## How do I use this!?
 
-We're working on making this a nodejs module. For _now_, here's how to use most of these:
+### Via NPM
 
-```js
-// base URL
-const url = `https://playerservers.com/...`;
-// Uses URL encoded form data, so we use URLSearchParams
-const params = new URLSearchParams();
-// This is an example for console backend, so let's send a command.
-params.append("sendcmd", cmd);
-// Use JS's bulit in fetch function to send the request.
-fetch(url, {
-  method: "POST",
-  headers: {
-    cookie: `PHPSESSID=${cookie}`,
-    "user-agent":
-      "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36",
-  },
-  body: params,
-});
-// aaaand we've sent a console command! This goes for basically all of the cubed API. Exept for login.
+> Note: The NPM package is in early beta. If you're not a contributor, we recommend using your own solution (see below)
+
+```
+$ npm i playerservers
 ```
 
-Here's an example login function that we use:
+```js
+// Example: Get servers and log in.
+const PlayerServers = require('PlayerServers');
 
-It uses node.js, and cheerio to parse the HTML. There is no known way to login without parsing the HTML because we need a hidden input called `token` which is generated on the fly.
+const playerserver = new PlayerServers('PHPSESSID');
+playerserver.login('mysupercoolemail@supercoolemailprovider.com', 'mysupersecurepassword1!').then(() => {
+  playerserver.getServersInDashboard().then((servers) => {
+    console.log(servers);
+  });
+});
+```
+
+### Write my own
+
+You can use any of the methods below to interface with the API. For login, we've found a semi-working way here:
 
 ```js
 const cheerio = require("cheerio");
