@@ -40,7 +40,7 @@ $ npm i playerservers
 // Example: Get servers and log in.
 const PlayerServers = require('PlayerServers');
 
-const playerserver = new PlayerServers('PHPSESSID');
+const playerserver = new PlayerServers('PHPSESSID'); // you can set this to anything, it's going to be rewritten by playerserver.login
 playerserver.login('mysupercoolemail@supercoolemailprovider.com', 'mysupersecurepassword1!').then(() => {
   playerserver.getServersInDashboard().then((servers) => {
     console.log(servers);
