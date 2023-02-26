@@ -123,13 +123,13 @@ function login(username, password) {
 | /queries/list_files                           | GET       | Exactly what you think it does. Returns some stupid JSON list. See extneded docs.                  |
 | /queries/console_backend                      | GET       | Returns the console output and gives an interface to interact with the console. See extended docs. |
 | /queries/servers                              | GET       | Returns a list of servers.                                                                         |
-| /queries/pms                                  | GET       | No idea.                                                                                           |
+| /queries/pms                                  | GET       | Private Messaging?                                                                                 |
 | /queries/alerts                               | GET       | CubedCraft notification system.                                                                    |
 | /queries/user                                 | GET       | Returns the user's hovercard data.                                                                 |
 | /dashboard/properties                         | GET, POST | Can edit server properties.                                                                        |
 | /dashboard/managers                           | GET, POST | Same as below for managers.                                                                        |
 | /dashboard/settings                           | GET, POST | View/Set PlayerServer settings. See extended docs.                                                 |
-| /suggestions/view/{suggestion_id}{suggestion} | GET, POST |
+| /suggestions/view/{suggestion_id}{suggestion} | GET, POST | Suggestions API.                                                                                   |
 | /unban                                        | GET, POST | Gets the unban appeal or submits one.                                                              |
 | /applications                                 | GET, POST | Gets the application form or submits.                                                              |
 
