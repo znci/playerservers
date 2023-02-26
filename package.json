@@ -1,10 +1,22 @@
 {
-  "name": "tfarapi",
-  "version": "1.0.0",
-  "main": "index.js",
-  "license": "MIT",
+  "name": "playerservers",
+  "version": "0.0.1",
+  "description": "node.js module to interface with PlayerServers API",
+  "main": "src/index.js",
   "dependencies": {
-    "cheerio": "^1.0.0-rc.12",
-    "request": "^2.88.2"
-  }
+    "cheerio": "^1.0.0-rc.12"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/znci/playerservers-research.git"
+  },
+  "author": "znci",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/znci/playerservers-research/issues"
+  },
+  "homepage": "https://github.com/znci/playerservers-research#readme"
 }
