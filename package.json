@@ -1,6 +1,6 @@
 {
   "name": "playerservers",
-  "version": "0.0.1-hotfix2",
+  "version": "0.0.2",
   "description": "node.js module to interface with PlayerServers API",
   "main": "src/index.js",
   "dependencies": {
