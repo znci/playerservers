@@ -1,2 +1,7 @@
 node_modules/
 yarn-error.log
+
+out/
+# TS -incremental file
+tsconfig.tsbuildinfo
+node_modules

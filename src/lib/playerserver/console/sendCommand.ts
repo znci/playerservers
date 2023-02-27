@@ -8,21 +8,20 @@
  *  console.log('Sent command!');
  * });
  */
-function sendCommand(cmd, cookie) {
+export function sendConsoleCommand(cmd: string, cookie: string): Promise<null> {
   return new Promise(async (resolve) => {
-    const url = `https://playerservers.com/queries/console_backend/`
+    const url = `https://playerservers.com/queries/console_backend/`;
     const params = new URLSearchParams();
     params.append("sendcmd", cmd);
     await fetch(url, {
       method: "POST",
       headers: {
-        'cookie': `PHPSESSID=${cookie}`,
-        'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36'
+        cookie: `PHPSESSID=${cookie}`,
+        "user-agent":
+          "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36",
       },
-      body: params
+      body: params,
     });
-    resolve();
-  })
+    resolve(null);
+  });
 }
-
-module.exports = sendCommand;
