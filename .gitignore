@@ -2,6 +2,7 @@ node_modules/
 yarn-error.log
 
 out/
+bin/
 # TS -incremental file
 tsconfig.tsbuildinfo
 node_modules

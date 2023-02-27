@@ -4,16 +4,17 @@
 
 ## Install
 
-```
+```bash
 $ npm i playerservers
+added 1 package in 92ms
 ```
 
 ## Use
 
 ```js
-const PlayerServers = require('playerservers')
+const PlayerServers = require("playerservers");
 
-const ps = new PlayerServers('');
+const ps = new PlayerServers("");
 ```
 
 Actually good docs coming soon:tm:
