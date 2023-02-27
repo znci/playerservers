@@ -1,4 +1,4 @@
-# CubedCraft Playerservers Unofficial API Documentation and Wrapper
+# playerservers
 
 ## Acknowledgements
 
