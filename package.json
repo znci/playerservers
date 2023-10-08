@@ -1,0 +1,29 @@
+{
+  "name": "playerservers",
+  "version": "2.0.0",
+  "description": "Simple but powerful API for the PlayerServers network.",
+  "main": "bin/index.js",
+  "types": "bin/index.d.ts",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "start": "node bin/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc -b -v",
+    "nodemon": "npx nodemon"
+  },
+  "author": "znci",
+  "license": "Apache-2.0",
+  "devDependencies": {
+    "@types/node": "^18.15.11",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.2.2"
+  },
+  "dependencies": {
+    "@types/node-fetch": "^2.6.4",
+    "axios": "^1.3.5",
+    "cheerio": "^1.0.0-rc.12",
+    "form-data": "^4.0.0"
+  }
+}
